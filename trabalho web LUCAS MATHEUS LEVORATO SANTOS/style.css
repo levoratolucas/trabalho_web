@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.topo{
+    width: 100%;
+    height: 20vw;
+    background-image: url(/topo.png);
+    background-size: 100%;
+
+}
+header{
+    color: aliceblue;
+    text-align: center;
+    width: 100%;       
+    background-color: rgba(0, 0, 0, 0.836);
+    z-index: 2;
+    
+}
+.top nav ul li{
+    width: 20%;
+    margin: auto;
+    list-style: none;
+    border: solid;
+    border-radius: 20px;
+    background-color: chartreuse;
+    color: black;
+}
+@media only screen and (max-width:481px){/*mob*/
+    .principal,.secundario{
+      padding: 10px;
+    }
+
+    main section{
+        border-top: solid;
+    }
+    .imagfloat{display: none;}
+    .imag{
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        background-image: url(/download.png);
+        background-size: 100%;
+    }
+}
+
+
+@media only screen and (min-width:481px){/*desc*/
+    header{
+        height: 50px;
+        position: sticky;
+        top: 0;
+        
+    }
+    .top nav ul{
+        display: flex;
+        text-align: center;
+    }
+   
+    main{
+        color: antiquewhite;
+        background-color: rgba(0, 0, 0, 0.836);
+        width: 100%;
+        min-height: 550px ;
+        display: flex;
+    }
+    .principal{
+        border-radius:10px ;
+        margin: 10px;
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.269);
+        color: black;
+        width: 70% ;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        
+    }
+    .imag{
+        background-size:100%;
+        height: 100px;
+        width: 100px;
+        background-image: url(/download.png);
+    
+        float: left;
+        margin: 10px;
+    }
+    .secundario{
+        width: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 0 5px rgba(255, 241, 241, 0.269),
+        0 0 0 0px rgba(255, 241, 241, 0.269);
+        margin: 10px;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.836);
+        color: aliceblue;
+        text-align: center;
+    }
+}
+.galeria {
+    background-color: rgba(0, 0, 0, 0.936);
+    width: 100%;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: 4*1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+
+}
+
+.foto1 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221445.png);
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border: solid white;
+    border-radius: 10px;
+    background-size: 100%;
+
+}
+
+.foto2 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221321.png);
+    border-radius: 10px;
+    border: solid white;
+    grid-column: 3/5;
+    grid-row: 3/5;
+    background-size: 100%;
+}
+
+.foto3 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221911.png);
+    grid-row: 1/3;
+    grid-column: 3/5;
+    border: solid white;
+    border-radius: 10px;
+    background-size: 100%;
+}
+
+.foto4 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 220657.png);
+    background-size: cover;    
+    border: solid;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.foto5 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221647.png);
+    grid-column: 1/3;
+    grid-row: 3/5;
+    border: solid white;
+    border-radius: 10px;
+    background-size: 100%;
+}
